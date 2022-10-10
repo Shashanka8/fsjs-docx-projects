@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #253898, #5737d6);
+}
+
+.wrapper {
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  font-size: 22px;
+  box-shadow: 3px 2px 4px 1px rgb(121, 117, 113);
+  color: #253898;
+}
+
+form {
+  padding: 30px 50px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.input-container label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #253898;
+  font-weight: 700;
+}
+
+.input-container input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 1px rgb(121, 121, 121);
+  padding: 10px;
+  display: block;
+  font-size: 15px;
+}
+.input-container input:focus {
+  border-color: #898282;
+  outline: none;
+}
+
+.input-container.success input {
+  border-color: #3ba562;
+}
+.input-container.error input {
+  border-color: #d05f57;
+}
+
+.input-container i {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  visibility: hidden;
+}
+.input-container i.info {
+  position: absolute;
+  font-size: 13.5px;
+  top: 4px;
+  left: 75px;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.input-container.success i.fa-check-circle {
+  color: #24673d;
+  visibility: visible;
+}
+.input-container.error i.fa-exclamation-circle {
+  color: #f14431;
+  visibility: visible;
+}
+
+.input-container small {
+  color: #f14431;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.input-container.error small {
+  visibility: visible;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  box-shadow: 4px 4px 5px 1px rgb(57, 53, 53);
+  font-size: 18px;
+  transition: 0.5s;
+  display: block;
+  margin: auto;
+  background-color: #253898;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit:active {
+  box-shadow: none;
+}
